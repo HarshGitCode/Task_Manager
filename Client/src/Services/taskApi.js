@@ -1,8 +1,8 @@
 import { apiConnector } from "./apiConnector";
-const CREATE_TASK = "http://localhost:3000/api/auth/createtask"
-const UPDATE_TASK = "http://localhost:3000/api/auth/update"
-const DELETE_TASK = "http://localhost:3000/api/auth/delete"
-const GET_ALL_TASK = "http://localhost:3000/api/auth/get"
+const CREATE_TASK = "https://task-manager-5ca3.onrender.com/api/auth/createtask"
+const UPDATE_TASK = "https://task-manager-5ca3.onrender.com/api/auth/update"
+const DELETE_TASK = "https://task-manager-5ca3.onrender.com/api/auth/delete"
+const GET_ALL_TASK = "https://task-manager-5ca3.onrender.com/api/auth/get"
 
 export async function createTask(taskData,user,setActiveCreateTask,token){
     try {

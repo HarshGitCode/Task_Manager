@@ -1,8 +1,8 @@
 import { apiConnector } from "./apiConnector";
 import { setLoading, setTasks, setToken, setUser } from "./redux/userSlice";
 
-const SIGNUP_API = "http://localhost:3000/api/auth/signup"
-const SIGNIN_API = "http://localhost:3000/api/auth/signin"
+const SIGNUP_API = "https://task-manager-5ca3.onrender.com/api/auth/signup"
+const SIGNIN_API = "https://task-manager-5ca3.onrender.com/api/auth/signin"
 export async function signUp(singnUpData, navigate) {
     try {
         const { email, password, name, country } = singnUpData;
