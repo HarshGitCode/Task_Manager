@@ -47,7 +47,7 @@ export function signIn(signInData, navigate) {
             localStorage.setItem("loading", JSON.stringify(true));
             localStorage.setItem("token", JSON.stringify(response.data.token))
 
-            navigate("/dashboard/status");
+            navigate("/dashboard/tasks");
         } catch (error) {
             console.log("LOGIN API ERROR............", error)
         }
